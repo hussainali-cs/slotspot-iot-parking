@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin"
+    tools:context=".ManageUsersActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/custom_editor1">
+
+            <!-- Manage Users Title -->
+            <TextView
+                android:id="@+id/manageUsersTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Users"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/skin2"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Add User Form -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_editor1"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_editor1"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black" />
+
+            <!-- Add and Remove User Buttons -->
+            <Button
+                android:id="@+id/btnAddUser"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Add User"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/skin2"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnRemoveUser"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Remove User"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/skin2"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
